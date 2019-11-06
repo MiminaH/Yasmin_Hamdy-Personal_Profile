@@ -1,0 +1,166 @@
+body {
+  /* setting body text color to darker black. */
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #66BFBF;
+  margin: auto auto 0 auto;
+  font-size: 5.625rem;
+  /* dynamic size unit: 'rem' (root em) */
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #66BFBF;
+  font-size: 2.5 rem;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #D3D3D3 6px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 4%;
+  /* better to use % so it scales with screen size */
+  margin: 70px auto;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 10px;
+  /* getting rid of underline */
+  text-decoration: none;
+}
+
+/* removed tex underline from anchor, which showed it's clickable. */
+/* changing anchor color when hovered on to show it's clickable. */
+a:hover {
+  color: #EAF6F6;
+}
+
+/************** CLASS SELECTORS **************/
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 10%;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+  /* top horizontal bottom */
+  padding: 50px 0 20px;
+
+  /* Because I changed the hight of div container itself, I had to find a way to vertically center the elements. Above however, she has used padding to control/increase space above & below, without needing to center elements in div. */
+
+  /* StackOverflow: How to Vertically Center Multiple Elements? */
+  /* used div inside of div because flex-direction put elements in column under each other, while I wanted two anchor to be on same line.*/
+  /* height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.top-cloud-img {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.bottom-cloud-img {
+  position: absolute;
+  top: 27%;
+  left: 10%;
+}
+
+.profile-picture-img {
+  border-radius: 25%;
+  height: 175px;
+  width: 170px;
+}
+
+.profile-div {
+  text-align: center;
+}
+
+.intro-p {
+  margin: auto;
+  width: 45%
+}
+
+.skill-row-div {
+  /* set horizontal margin to auto, to center element in middle. */
+  margin: 3rem auto;
+  width: 50%;
+  text-align: left;
+}
+
+.code-img {
+  border-radius: 50%;
+  width: 23%;
+  float: left;
+  margin: auto 30px 30px auto;
+}
+
+.contact-message-p {
+  /* top horizontal bottom */
+  margin: 40px auto 60px;
+  width: 45%
+}
+
+.copywrite-p {
+  color: #EAF6F6;
+  /* 75% of 16px. */
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.contactMe-btn-a {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.contactMe-btn-a:hover {
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+  text-decoration: none;
+}
